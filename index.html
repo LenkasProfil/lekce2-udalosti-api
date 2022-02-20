@@ -3,19 +3,53 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>JavaScript a DOM</title>
+	<title>'V elipse spí lev.'</title>
+
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+
+
 </head>
 <body onkeydown="stiskKlavesy(event)">
 
+	<h1></h1>
 
+	
 
-	<h1 onclick="zmenStyl()">Změna tříd, události</h1>
+	<p>V elipse spí lev.</p>
+	<button onclick="priKliknuti()">červené po kliknutí</button>       
+	<button onclick="vetsiPriKliknuti()">větší po kliknutí</button> 
+	                
+
+	<p>Audio ovladač</p>
+
+	<button onclick="startAudio()">
+		Přehraj
+	</button>
+
+	<button onclick="pause()">
+		Pauzni
+	</button>
+
+	<button onclick="load()">
+		Reset
+	</button>
+
+	<button onclick="Zvuk0()">
+		Zvuk 0
+	</button>
+
+	<button onclick="Zvuk05()">
+		Zvuk 0,5
+	</button>
+
+	<button onclick="Zvuk1()">
+		Zvuk 1
+	</button>
 
 	<div onmouseover="priNajetiNaCtverec()" class="zluty"></div>
 
-	
+
 	<!-- <div class="ctverecek zluty"></div> -->
 
 	<div onmouseover="priNajetiNaCtverec()" class="ctverecek zeleny"></div>
