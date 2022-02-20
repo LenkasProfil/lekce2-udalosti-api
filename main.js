@@ -1,3 +1,32 @@
 // tady je místo pro náš program
-console.log('test');
 
+// console.log('test');
+
+let nadpis = document.querySelector('h1');
+nadpis.classList.add('zluty');
+nadpis.classList.remove('zluty')
+
+let ctverecek = document.querySelector('div.zluty');
+ctverecek.classList.add('ctverecek')
+
+let pocitadlo = 0
+function priNajetiNaCtverec() {
+    console.log('test'+ pocitadlo)
+    //pocitadlo = pocitadlo + 1;  
+    pocitadlo++  
+}
+
+function zmenStyl(){
+    nadpis.classList.toggle('zeleny')
+}
+
+function stiskKlavesy(udalost) {
+    console.log(udalost.key);
+}
+
+
+function startAudio() {
+    let audioFile = document.getElementById('zvukovaStopa')
+    console.log('Zapínám píseň')
+    audioFile.play();
+}
